@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crossroads</title>
+    <style>
+        #container{
+            width:80%;
+          
+            height: 400px;
+  background-color: hotpink; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, hotpink ,yellow,hotpink);
+
+           border-radius: 5%;
+           vertical-align: middle;
+           padding-top: 20px;
+           padding-left: 10px;
+           padding-right: 10px;
+        }
+        #child{
+            width:80%;
+          
+            height: 400px;
+  background-color: hotpink; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, hotpink ,yellow,hotpink);
+
+        }
+     
+    </style>
+  
+</head>
+<body>
+    <center>
+    <div id="container"><br><h1>Enter name to view details</h1>
+    <br><input type="text"  id="inp">
+  <br><br><br>
+     
+<button onclick="display()">click me</button>
+<h1 id="display-head"></h1></div></center>
+
+    <script>
+    
+        function display()
+    
+            {
+                            var text=document.getElementById("inp").value
+            document.getElementById("display-head").innerHTML=text
+            if(text=="Alice")
+            {
+                document.write("name: Alice,age: 25,    place: New York,&nbsp dob: 1998-03-12")
+                
+            
+            }
+           else if(text=="Bob")
+
+            {
+                document.write( "name: Bob,age: 32,place: Los Angeles,dob: 1991-07-19")
+            }
+            else if(text=="Charlie")
+            {
+                document.write("name:charlie,age:41,place:chicago,dob:1982-11-03")
+            
+            }
+             else if(text =="David")
+            {
+                document.write("name:david,age:18,place:houston,dob:20005-05-08")
+            }
+           else if (text=="Emily")
+            {
+                document.write("name:emily,age:29,place:san francisco,dob:1994-09-26")
+        
+            }
+            else if (text=="Frank")
+            {
+                document.write("name:frank,age:19,place:boston,dob:1987-08-30")
+            }
+            else if (text=="Grace")
+               {
+                document.write("name: Grace, age: 22,place: Miami",)
+                 } 
+            else  if  (text=="Harry"){
+                document.write("name:harry,age:47,place:seattle,dob:1976-06-21")
+                 }
+                 else 
+                 {
+                    alert("oops !user not registered")
+                    document. write("invalid user ")
+                 }
+                }
+
+
+
+                
+ 
+        
+    
+    </script>
+    
+</body>
+</html>
